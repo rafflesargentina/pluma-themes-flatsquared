@@ -1,0 +1,43 @@
+/* ===========================================================================
+   Sidebar
+   =========================================================================== */
+
+
+aside.Sidebar
+  float: left
+  width: $ancho-sidebar
+  height: 100%
+  display: none
+  z-index: $capa-navegacion + 1
+  position: fixed
+  background: $color-variante-fondo
+  border-right: $borde-claro
+
+ul.Lista-Sidebar
+  border-top: $borde-claro
+
+li.Item-Sidebar
+  cursor: pointer
+  border-bottom: $borde-claro
+  @include transition(background, $timing, $duracion)
+  &:focus,
+  &:hover,
+  &:active
+    background: $color-borde-claro
+    @include transition(background, $timing, $duracion)
+  > a
+    color: $gris-claro
+    padding: $padding-tabla-vertical $padding-header
+    font-weight: 300
+
+li.Item-Sidebar.active
+  background: $color-fondo
+  box-shadow: inset 4px 0 0 0 $gris-mas-oscuro
+  > a
+    color: $gris-mas-oscuro
+
+/* Media Queries
+   =========================================================================== */
+@include media(min-width $segundo-bp)
+  aside.Sidebar
+    display: block

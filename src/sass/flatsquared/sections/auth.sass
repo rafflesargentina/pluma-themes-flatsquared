@@ -1,0 +1,48 @@
+/* ===========================================================================
+   Auth
+   =========================================================================== */
+
+
+main.Auth
+  top: 0
+  left: 0
+  right: 0
+  width: 20rem
+  height: 40rem
+  bottom: 0
+  margin: auto
+  overflow: hidden
+  position: fixed
+
+  .Btn-Link
+    color: $color-fondo
+    font-weight: 300
+    &:focus,
+    &:hover,
+    &:active
+      color: $color-fondo
+
+section.Email,
+section.Login,
+section.Register
+  padding: $margen $margen-chico
+  background: $color-fondo
+  margin-bottom: $margen-muy-chico
+  border-radius: $radio-borde
+
+  div.Logo
+    width: 100%
+    height: $alto-logo
+    background: url('/img/logo.svg') center no-repeat
+    margin-bottom: $margen-chico
+    background-size: auto 100%
+
+  h3
+    float: left
+    width: 100%
+    border-top: $borde-claro
+    padding-top: $margen-chico
+    margin-bottom: $margen-chico
+
+  h3 + p
+    margin-bottom: $margen-muy-chico

@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* ===========================================================================
+   Variables
+   @mixin ========================================================================== */
+/* Tipografias
+   @mixin ========================================================================== */
+/* Grises
+   @mixin ========================================================================== */
+/* Bordes
+   @mixin ========================================================================== */
+/* Espaciados
+   @mixin ========================================================================== */
+/* Margenes
+   @mixin ========================================================================== */
+/* Header
+   @mixin ========================================================================== */
+/* Header
+   @mixin ========================================================================== */
+/* Sidebar
+   @mixin ========================================================================== */
+/* ===========================================================================
+   Base
+   @mixin ========================================================================== */
+/**
+ * Flota los elementos a la izquierda y establece un ancho del 100%.
+ */
+main,
+aside.Sidebar,
+section.Email,
+section.Login,
+li.Item-Sidebar,
+li.Item-Sidebar > a,
+ul.Lista-Sidebar,
+section.Register,
+.Cuenta-Resultados,
+div.Wrapper-Interior-Main {
+  float: left;
+  width: 100%; }
+
+/* ===========================================================================
+   Auth
+   @mixin ========================================================================== */
+main.Auth {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 20rem;
+  height: 40rem;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  position: fixed; }
+  main.Auth .Btn-Link {
+    color: #fff;
+    font-weight: 300; }
+    main.Auth .Btn-Link:focus, main.Auth .Btn-Link:hover, main.Auth .Btn-Link:active {
+      color: #fff; }
+
+section.Email,
+section.Login,
+section.Register {
+  padding: 4rem 2rem;
+  background: #fff;
+  margin-bottom: 1rem;
+  border-radius: 4px; }
+  section.Email div.Logo,
+  section.Login div.Logo,
+  section.Register div.Logo {
+    width: 100%;
+    height: 3rem;
+    background: url("/img/logo.svg") center no-repeat;
+    margin-bottom: 2rem;
+    background-size: auto 100%; }
+  section.Email h3,
+  section.Login h3,
+  section.Register h3 {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 2rem;
+    margin-bottom: 2rem; }
+  section.Email h3 + p,
+  section.Login h3 + p,
+  section.Register h3 + p {
+    margin-bottom: 1rem; }

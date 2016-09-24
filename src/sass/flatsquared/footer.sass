@@ -1,0 +1,36 @@
+/* ===========================================================================
+   Footer
+   =========================================================================== */
+
+
+footer
+  padding: $alto-logo 0
+  border-top: $borde-claro
+  margin-top: $espacio-grande
+  @include outer-container()
+
+  ul.Copyright
+    width: auto
+
+  li.Item-Copyright
+    color: $gris
+    float: left
+    font-size: $tamano-fuente-chico
+    border-right: $borde-claro
+    margin-right: $padding-tabla-horizontal
+    padding-right: $padding-tabla-horizontal
+    &:last-child
+      border-right: none
+      margin-right: 0
+      padding-right: 0
+
+    a.Link-Copyright
+      color: inherit
+      float: left
+      font-size: inherit
+      font-style: italic
+      &:focus,
+      &:hover,
+      &:active
+        color: $gris-mas-oscuro
+        text-decoration: underline
